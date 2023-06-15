@@ -1,0 +1,186 @@
+:root {
+  --primary-text-color: rgba(67, 68, 85, 1);
+  --title-text-color: #2e2f42;
+  --accent-color: #404bbf;
+  --backgroun-color: #ffffff;
+  --text-color-1: #4d5ae5;
+  --address-color: #434455;
+  --footer-text-color: #e7e9fc;
+  --additional-color: #f4f4fd;
+}
+body {
+  background-color: var(--backgroun-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.33;
+}
+.list {
+  list-style: none; /* take out dots from list */
+}
+
+/* -----------------logo------------------ */
+.logo {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+
+  /* font-weight: 800; */
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--text-color-1);
+}
+
+/* ---------------Footer----------------- */
+.footer {
+  background-color: var(--title-text-color);
+}
+.footer-text {
+  color: var(--footer-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.footer > .logo {
+  color: var(--additional-color);
+}
+
+/* -------------------------------------- */
+
+/* --------------Site nav---------------- */
+.site-nav .link {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.site-nav .link:active,
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+.address .link {
+  text-decoration: none;
+  color: var(--address-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.address .link:active,
+.address .link:focus,
+.address .link:hover {
+  color: var(--accent-color);
+}
+
+/* ------------------Section 1------------- */
+.hero {
+  background-color: var(--title-text-color);
+}
+.hero-title {
+  color: var(--backgroun-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  /* or 107% */
+  text-align: center;
+}
+
+/* --------------Section 2,3,4------------- */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* -----------Section 2 strengths---------- */
+.strengths .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* ---------------Section 4---------------- */
+.team {
+  background-color: var(--additional-color);
+}
+.teammembers .team-member {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-photo {
+  background-color: var(--backgroun-color);
+}
+.team .team-position {
+  text-align: center;
+}
+
+/* -----------Portfolio list------------- */
+.portfolio {
+  background-color: var(--backgroun-color);
+}
+.list .list-portfolio {
+  text-decoration: none; /* take out all underlines */
+  font-family: inherit; /* need it for inheritance from body part */
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.list-portfolio .title {
+  font-weight: 500;
+}
+.list .list-text {
+  font-family: inherit;
+  color: var(--address-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ----------------Buttons----------------- */
+.hero .button {
+  font-family: inherit; /* need it for inheritance from body part */
+  color: var(--backgroun-color);
+  background-color: var(--text-color-1);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+  background-color: var(--accent-color);
+}
+.button-portfolio {
+  font-family: inherit; /*need it for inheritance from body part*/
+  color: var(--text-color-1);
+  background-color: var(--additional-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus,
+.button-portfolio:active {
+  color: var(--backgroun-color);
+  background-color: var(--accent-color);
+}
