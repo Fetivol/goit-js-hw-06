@@ -27,5 +27,3 @@ console.log(imagesList);
 galleryList.insertAdjacentHTML('afterbegin', imagesList);
 
 galleryList.style.listStyle = 'none';
-galleryList.style.display = 'flex';
-galleryList.style.gap = '20px';
