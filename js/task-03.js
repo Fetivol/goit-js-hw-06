@@ -25,3 +25,5 @@ const imagesList = images
   .join(' ');
 console.log(imagesList);
 galleryList.insertAdjacentHTML('afterbegin', imagesList);
+
+galleryList.style.listStyle = 'none';
