@@ -41,8 +41,10 @@ function creatingOfBoxes() {
   console.log(newBoxesArray);
   const newBoxes = newBoxesArray.map(elem => {
     const box = document.createElement('div');
-    box.style.width = `${selectors.width + elem * 10}px`;
-    box.style.height = `${selectors.height + elem * 10}px`;
+    selectors.width += elem * 10;
+    selectors.height += elem * 10;
+    box.style.width = `${selectors.width}px`;
+    box.style.height = `${selectors.height}px`;
     box.style.backgroundColor = getRandomHexColor();
     return box;
   });
@@ -55,4 +57,6 @@ function destroingOfBoxes() {
     element.remove()
   );
   console.log(elementsForDelete);
+  selectors.width = 30;
+  selectors.height = 30;
 }
