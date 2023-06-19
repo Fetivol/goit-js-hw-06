@@ -1,16 +1,12 @@
 const inputEl = document.querySelector('#name-input');
 const nameEl = document.querySelector('#name-output');
 
-// inputEl.addEventListener('input', setText);
-
-// function setText() {
-//   inputEl.value.length < 1
-//     ? (nameEl.textContent = 'Anonymous')
-//     : (nameEl.textContent = inputEl.value);
-// }
-
-inputEl.addEventListener('input', even => {
-  even.currentTarget.value.length < 1
+inputEl.addEventListener('input', evt => {
+  const inputText = evt.currentTarget.value.trim();
+  // console.log(inputText, '|');
+  inputText === ' ' || inputText.length < 1
     ? (nameEl.textContent = 'Anonymous')
-    : (nameEl.textContent = even.currentTarget.value);
+    : (nameEl.textContent = inputText);
 });
+const a = '   bbbbb   ';
+console.log(a.trim());
