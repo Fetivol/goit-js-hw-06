@@ -37,7 +37,6 @@ selectors.inputEl.addEventListener('change', () => {
 });
 
 function creatingOfBoxes() {
-  destroingOfBoxes();
   const newBoxesArray = createArray(selectors.inputEl.value);
   console.log(newBoxesArray);
   const newBoxes = newBoxesArray.map(elem => {
