@@ -49,7 +49,6 @@ function creatingOfBoxes() {
     selectors.height += 10;
     return box;
   });
-  // [...newBoxes].style.paddingTop = '10px';
   selectors.boxesEl.append(...newBoxes);
 }
 
