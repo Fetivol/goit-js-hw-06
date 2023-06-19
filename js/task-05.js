@@ -9,8 +9,8 @@ const nameEl = document.querySelector('#name-output');
 //     : (nameEl.textContent = inputEl.value);
 // }
 
-inputEl.addEventListener('input', () => {
-  inputEl.value.length < 1
+inputEl.addEventListener('input', even => {
+  even.currentTarget.value.length < 1
     ? (nameEl.textContent = 'Anonymous')
-    : (nameEl.textContent = inputEl.value);
+    : (nameEl.textContent = even.currentTarget.value);
 });
