@@ -41,14 +41,15 @@ function creatingOfBoxes() {
   console.log(newBoxesArray);
   const newBoxes = newBoxesArray.map(elem => {
     const box = document.createElement('div');
-    selectors.width += elem * 10;
-    selectors.height += elem * 10;
     box.style.width = `${selectors.width}px`;
     box.style.height = `${selectors.height}px`;
     box.style.backgroundColor = getRandomHexColor();
+    box.style.marginTop = '5px';
+    selectors.width += 10;
+    selectors.height += 10;
     return box;
   });
-  console.log(typeof newBoxes);
+  // [...newBoxes].style.paddingTop = '10px';
   selectors.boxesEl.append(...newBoxes);
 }
 
